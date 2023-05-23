@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 *,
@@ -8,12 +7,9 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
 }
 
 body {
-  background: #f4f4f4;
   background: #f4f4f4;
 }
 
@@ -23,22 +19,10 @@ h1 {
   font-size: 30px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 28px;
-  font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #000000;
 }
 
 p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  font-family: "Montserrat", serif;
-  color: #4d4d4d;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -51,21 +35,10 @@ p {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-p:hover,
-p:focus,
-h2:hover,
-h2:focus {
-  color: #121212;
-  opacity: 0.8;
 }
 
 img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* header styles (julia)*/
@@ -230,7 +203,7 @@ img:hover {
   padding: 12px 24px;
   color: rgb(68, 66, 66);
   font-family: "Montserrat", serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -256,7 +229,7 @@ img:hover {
   }
 
   .menu__item {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .burger-link {
@@ -266,7 +239,7 @@ img:hover {
 
 @media screen and (max-width: 430px) {
   .menu__box {
-    max-width: 120px;
+    max-width: 170px;
   }
 
   .menu__item {
@@ -274,24 +247,18 @@ img:hover {
   }
 
   .burger-link {
-    margin-left: 25%;
+    margin-left: 30%;
   }
 }
 
 /*HERO PART ANASTASIA*/
 
 .hero__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-width: 100%;
-  border-bottom: 1px solid #38383860;
-  margin-bottom: 70px;
   max-width: 100%;
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/assets/img/hands.jpg);
+  background-image: url(../img/hands.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -422,8 +389,10 @@ img:hover {
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  color: #f4f4f4;
-  background-color: #4d4d4d90;
+  color: #303030;
+  background-color: transparent;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
 }
 
 .Myjob__citation p {
@@ -433,7 +402,7 @@ img:hover {
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  color: #f4f4f4;
+  color: #2a2929;
 }
 
 .Myjob__photo {
@@ -463,6 +432,7 @@ img:hover {
   }
 
   .Myjob__photo {
+    width: 100%;
     margin-left: 0;
   }
 
@@ -473,9 +443,36 @@ img:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .Myjob__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Myjob__left {
+    max-width: 450px;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .Myjob__photo {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 0;
+  }
+
+  .Myjob__citation {
+    align-self: center;
+    width: 350px;
+    margin-right: 0;
+  }
+}
+
 .border {
   width: 100%;
   border-bottom: 1px solid #38383860;
+  margin-bottom: 40px;
 }
 
 /*MYJOB PART ANASTASIA ENDS*/
@@ -492,7 +489,6 @@ img:hover {
 .about__title {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
 }
 
 .about__title_education {
@@ -513,7 +509,7 @@ img:hover {
 
 .about__content {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 h2 {
@@ -523,6 +519,10 @@ h2 {
   line-height: 28px;
   font-family: "Montserrat", serif;
   color: #4d4d4d;
+}
+
+.about__citations {
+  display: flex;
 }
 
 h3 {
@@ -556,9 +556,10 @@ h3 {
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-  background-color: #4d4d4d90;
-  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(27, 27, 27);
   margin-top: 45px;
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
 }
 
 .about__target p {
@@ -567,7 +568,7 @@ h3 {
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  color: #f4f4f4;
+  color: #1d1c1c;
 }
 
 .about__citation p {
@@ -576,7 +577,7 @@ h3 {
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  color: #f4f4f4;
+  color: #232323;
 }
 
 .about__citation {
@@ -594,8 +595,10 @@ h3 {
   line-height: 32px;
   font-family: "Montserrat", serif;
   color: white;
-  background-color: #4d4d4d90;
-  margin-top: 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  margin-top: 100px;
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
 }
 
 .about__item {
@@ -624,13 +627,12 @@ h3 {
   line-height: 30px;
   font-family: "Montserrat", serif;
   color: #4d4d4d;
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
 }
 
-.about__education_list {
-  margin-bottom: 100px;
-}
+
+
 
 .about__aside {
   margin-right: 70px;
@@ -784,38 +786,74 @@ h3 {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .about__aside {
-    padding-left: 10px;
+    padding-right: 50px;
+  }
+
+  .about__body {
+    margin-right: 90px;
   }
 
   .about__article {
-    padding-left: 10px;
+    padding-right: 50px;
+  }
+
+  .about__target {
+    width: 320px;
+    height: 100px;
+  }
+
+  .about__mobile_content {
+    padding-right: 30px;
+  }
+
+  .about__citation {
+    width: 320px;
+    height: 190px;
   }
 }
 
-.about__mobile_content {
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
   .about__body {
-    margin-left: 80px;
+    margin-left: 0px;
+  }
+
+  .about__citation {
+    width: 320px;
+    height: 190px;
+  }
+
+  .about__aside {
+    padding-right: 0px;
+  }
+
+  .about__body {
+    padding-right: 70px;
+  }
+
+  .about__mobile_content {
+    padding-left: 10px;
+    margin-right: 15px;
+    padding-right: 0;
+  }
+
+  .about__article {
+    padding-right: 0px;
   }
 }
 
 /*About me PART Gulya end*/
 
 /* ====Viddeo start (Julia)*/
-
-.video__title {
-  text-align: center;
+.video {
+  margin-bottom: 70px;
 }
 
 .video__container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .video__subtitle {
@@ -824,28 +862,16 @@ h3 {
   border: 1px solid #444242;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
 }
 
-.video__btn {
-  margin-left: 35%;
-  text-align: center;
-  width: 300px;
-  height: 100px;
-  background-color: #4d4d4d90;
-  color: #fffbfb;
-  font-family: "Montserrat", serif;
-  font-size: 18px;
-  border: 1px solid #404040;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.video__subtitle:hover {
+  color: black;
 }
 
 .video__btn:hover,
@@ -856,17 +882,8 @@ h3 {
   transition: 0.8s ease-out;
 }
 
-.video {
-  margin-bottom: 100px;
-}
-
-.video__container {
-  display: flex;
-}
-
 .video__title {
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 60px;
 }
 
@@ -877,45 +894,40 @@ h3 {
 
 .video__content {
   margin-bottom: 20px;
-  opacity: 0.8;
   filter: grayscale(100%);
 }
 
-.video__right-part {
-  max-width: 700px;
-}
-
-.video__subtitle-content {
-  padding: 10px;
-  border: 1px solid #444242;
-  margin-top: 200px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 
 .video__subtitle {
+  padding: 10px;
+  border: 1px solid #444242;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  font-style: normal;
+  color: #2b2a2a;
+  margin-bottom: 90px;
+}
+
+.video__subtitle:hover {
+  color: black;
 }
 
 .video__btn {
-  width: 300px;
-  height: 100px;
-  background-color: #4d4d4d90;
-  color: #fffbfb;
-  font-size: 25px;
+  margin-left: 45%;
+  width: 170px;
+  height: 50px;
+  background-color: transparent;
+  color: #000000;
+  font-size: 17px;
   border: 1px solid #404040;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1245px) {
@@ -934,17 +946,18 @@ h3 {
   }
 
   .video__content {
-    margin: 10 auto;
+    margin-bottom: 10px;
     text-align: center;
   }
 
-  .video__subtitle-content {
+  .video__subtitle {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
   .video__btn {
     margin: auto;
+    margin-bottom: 20px;
   }
 
   .video__form {
@@ -953,35 +966,32 @@ h3 {
 
   .video__content {
     width: 100%;
-    height: 100% auto;
+    min-height: 450px;
+    max-height: auto;
+    height: 100%;
   }
 }
+
 
 @media screen and (max-width: 615px) {
   .video__content {
     width: 100%;
-    height: auto;
-    max-height: 100%;
+    min-height: 300px;
+    max-height: auto;
+    height: 100%;
   }
 }
 
-@media screen and (max-width: 325px) {
-  .video__btn {
-    width: 240px;
-  }
-}
-
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 464px) {
   .video__content {
     width: 100%;
-    height: auto;
-    max-height: 100%;
+    min-height: 150px;
+    max-height: auto;
+    height: 100%;
   }
-}
 
-@media screen and (max-width: 325px) {
   .video__btn {
-    width: 240px;
+    width: 150px;
   }
 }
 
@@ -995,13 +1005,55 @@ h3 {
   border-radius: 10px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-  background-color: #5b554b90;
+  background-color: #4d4d4d70;
+  border-bottom: 1px solid #38383860;
+  text-decoration: none;
+  margin-bottom: 70px;
 }
 
-/*About me PART Gulya end*/
+.link__patreon {
+  text-align: end;
+}
+
+.link__patreon a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 36px;
+}
+
+.link__patreon a:hover {
+  text-decoration: underline;
+  color: #3d3b3b;
+}
+
+@media screen and (max-width: 1290px) {
+  .about__guide {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .about__guide-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .about__guide-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__guide-text {
+    font-size: 15px;
+  }
+}
+
+/*About guide Nadya end*/
 
 /*About reviews Nadya start*/
 .container {
+  max-width: 1300px;
   margin-bottom: 40px;
   font-family: "Montserrat", serif;
   color: #4d4d4d;
@@ -1016,7 +1068,8 @@ h3 {
   line-height: 28px;
 }
 
-.reviews__top,
+.reviews__top-1,
+.reviews__top-2,
 .reviews__bottom {
   display: flex;
   margin: 10px;
@@ -1030,6 +1083,7 @@ h3 {
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  font-family: "Montserrat", cursive;
 }
 
 h5,
@@ -1039,8 +1093,21 @@ h6 {
   margin: 10px;
 }
 
-/*About reviews Nadya end*/
+@media screen and (max-width: 1000px) {
+  .reviews__top-1 {
+    display: block;
+  }
 
+  .reviews__top-2 {
+    display: block;
+  }
+
+  .reviews__bottom {
+    display: block;
+  }
+}
+
+/*About reviews Nadya end*/
 /*FOOTER PART MILA*/
 .contacts {
   display: flex;
@@ -1062,10 +1129,10 @@ h6 {
   width: 60%;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 15px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #0d0d0d;
   text-align: center;
 }
 
@@ -1139,9 +1206,8 @@ h6 {
 .social__telegram,
 .social__instagram,
 .social__youtube {
-  width: 60px;
-  height: 60px;
-  padding: 12px;
+  width: 50px;
+  height: 50px;
 }
 
 .bottom {
@@ -1175,9 +1241,8 @@ h6 {
   .social__telegram,
   .social__instagram,
   .social__youtube {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+    width: 20px;
+    height: 20px;
   }
 
   .footercontainer__copyright-text1,
@@ -1215,13 +1280,11 @@ h6 {
   .social__instagram1,
   .social__telegram1,
   .social__whatsapp1,
-  .social__whatsapp,
   .social__telegram,
   .social__instagram,
   .social__youtube {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
+    width: 20px;
+    height: 20px;
   }
 
   .footercontainer__copyright-text1,
